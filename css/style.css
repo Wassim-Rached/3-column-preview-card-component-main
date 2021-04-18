@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    Font-size: 15px;
+  }
+
+  body {
+    background-color: #EEE;
+  }
+
+  .container {
+    row-gap: 10px;
+    column-gap: 10px;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 400px;
+    width: 900px;
+    height: 400px;
+    margin: 100px auto 150px auto;
+  }
+
+  /* START GLOBAL RULES */
+  .container div {
+    position: relative;
+    width: 300px;
+  }
+
+  .container div .logo {
+    margin: 40px;
+  }
+
+  .container div h1 {
+    margin: 0 40px;
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    font-family: Big Shoulders Display;
+    font-size: 37px;
+  }
+
+  .container div p {
+    margin: 30px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: Lexend Deca;
+  }
+
+  .container div .butt {
+
+    transition: 0.2s;
+    font-family: Lexend Deca;
+    border-radius: 20px;
+    text-align: center;
+    background-color: hsl(0, 0%, 95%);
+    width: 100px;
+    padding: 12px;
+    margin: 40px 80px;
+    position: absolute;
+    bottom: 0;
+  }
+
+  /* END GLOBAL RULES */
+  /* START CARDS */
+  .container .first {
+    background-color: hsl(31, 77%, 52%);
+  }
+
+  .container .second {
+    background-color: hsl(184, 100%, 22%);
+  }
+
+  .container .third {
+    background-color: hsl(179, 100%, 13%);
+  }
+
+  /* END CARDS */
+  /* START BUTTON  DECORATION*/
+  .container .first .butt {
+    color: hsl(31, 77%, 52%);
+  }
+
+  .container .second .butt {
+    color: hsl(184, 100%, 22%)
+  }
+
+  .container .third .butt {
+    color: hsl(179, 100%, 13%);
+  }
+
+  .container div .butt:hover {
+    transform: translateY(10px);
+    transform: rotate(-7deg);
+    padding: 15px;
+  }
+
+  .attribution {
+    padding: 15px;
+    text-align: center;
+    color: darkgray;
+    background-color: rgb(136, 25, 25);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+  }
+
+  .attribution a {
+    color: gold;
+    font-weight: bold;
+  }
+
+  /* END BUTTON DECORATION*/
+  /* START PHONE */
+  @media only screen and (max-width: 975px) {
+    .container {
+      display: grid;
+      grid-template-columns: 300px 300px;
+      grid-template-rows: 400px 400px;
+      width: 600px;
+      height: 800px;
+      margin: 100px auto 150px auto;
+    }
+  }
+
+  @media only screen and (max-width: 650px) {
+    .container {
+      display: grid;
+      grid-template-columns: 300px;
+      grid-template-rows: 400px 400px 400px;
+      width: 300px;
+      height: 1200px;
+      margin: 100px auto 150px auto;
+    }
+
+    .attribution {
+      line-height: 30px;
+    }
+  }
+/*END PHONE */
